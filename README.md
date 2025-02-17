@@ -6,4 +6,4 @@ protocolo git
 - git status (mostra alterações e atualizações do rep na máquina)
 - git add .
 - git commit -m "nome da alteração/descrição da alteração"
-- git push
+- git push (para setar no site)
