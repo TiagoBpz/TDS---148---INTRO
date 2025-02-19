@@ -6,47 +6,49 @@
     <title>Matemática</title>
     <link rel="stylesheet" href="mat.css">
 </head>
-<body>
+<body id="corpo" class="corpinho">
     <h1>Contas matemáticas</h1>
+<main>
 
     <section>
         <h2>Soma</h2>
-        <label for="n1">Primeiro número</label><br>
-        <input type="text" id="n1"placeholder="Digite o primeiro número"><br>
-        <label for="n2">Segundo número:</label><br>
-        <input type="text" id="n2" placeholder="Digite o segundo numero"><br>
-        <button onclick="somar()">SOMAR</button><br>
+        <label for="n1">Primeiro número</label>
+        <input type="text" id="n1"placeholder="Digite o primeiro número">
+        <label for="n2">Segundo número:</label>
+        <input type="text" id="n2" placeholder="Digite o segundo numero">
+        <button onclick="somar()">SOMAR</button>
         <p>Resultado: <span id="res"></span></p>
 
     </section>
     <section>
         <h2>Subtração</h2>
-        <label for="n3">Primeiro número</label><br>
-        <input type="text" id="n3"placeholder="Digite o primeiro número"><br>
-        <label for="n4">Segundo número:</label><br>
-        <input type="text" id="n4" placeholder="Digite o segundo numero"><br>
-        <button onclick="Subtração()">diminuir</button><br>
+        <label for="n3">Primeiro número</label>
+        <input type="text" id="n3"placeholder="Digite o primeiro número">
+        <label for="n4">Segundo número:</label>
+        <input type="text" id="n4" placeholder="Digite o segundo numero">
+        <button onclick="Subtração()">SUBTRAÇÃO</button>
         <p>Resultado: <span id="resu"></span></p>
     </section>
     <section>
         <h2>Multiplicação</h2>
-        <label for="n5">Primeiro número</label><br>
-        <input type="text" id="n5"placeholder="Digite o primeiro número"><br>
-        <label for="n6">Segundo número:</label><br>
-        <input type="text" id="n6" placeholder="Digite o segundo numero"><br>
-        <button onclick="Multiplicacao()">vezes</button><br>
+        <label for="n5">Primeiro número</label>
+        <input type="text" id="n5"placeholder="Digite o primeiro número">
+        <label for="n6">Segundo número:</label>
+        <input type="text" id="n6" placeholder="Digite o segundo numero">
+        <button onclick="Multiplicacao()">MULTIPLICAÇÃO</button>
         <p>Resultado: <span id="resul"></span></p>
     </section>
     <section>
         <h2>Divisão</h2>
-        <label for="n7">Primeiro número</label><br>
-        <input type="text" id="n7"placeholder="Digite o primeiro número"><br>
-        <label for="n8">Segundo número:</label><br>
-        <input type="text" id="n8" placeholder="Digite o segundo numero"><br>
-        <button onclick="Divisao()">dividir</button><br>
+        <label for="n7">Primeiro número</label>
+        <input type="text" id="n7"placeholder="Digite o primeiro número">
+        <label for="n8">Segundo número:</label>
+        <input type="text" id="n8" placeholder="Digite o segundo numero">
+        <button onclick="Divisao()">DIVIDIR</button>
         <p>Resultado: <span id="resulta"></span></p>
         
     </section>
+</main>
 
     <script src="mat.js"></script>
     
