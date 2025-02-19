@@ -37,3 +37,75 @@ function Divisao(){
     
     return res
 }
+
+function media(){
+    var m1 = parseFloat(document.getElementById("m1").value)
+    var m2 = parseFloat(document.getElementById("m2").value)
+    var m3 = parseFloat(document.getElementById("m3").value)
+    var m4 = parseFloat(document.getElementById("m4").value)
+    var m5 = parseFloat(document.getElementById("m5").value)
+    var media = document.getElementById("respMedia")
+    var msg = document.getElementById("msg")
+    var res = (m1 + m2 + m3 + m4 + m5) / 5
+    if(res >= 7){
+        media.textContent = res
+        msg.textContent = "PASSOU"
+        msg.style.color = "green"
+    }else{
+        media.textContent = res
+        msg.textContent = "REPROVOU"
+        msg.style.color = "red"
+    }
+
+}
+function imc(){
+    var kg = parseFloat(document.getElementById("n9").value)
+    var altura = parseFloat(document.getElementById("n10").value)
+    var imc = document.getElementById("respImc")
+    var msg = document.getElementById("msgimc")
+    var rest = (altura / altura) * kg).toFixed(1)
+    if(rest >= 40.0){
+        imc.textContent = rest
+        msg.textContent = "Obesidade 3"
+        msg.style.color = "orange"
+    }else if(rest <= 39.9 && rest >= 35.0){
+        imc.textContent = rest
+        msg.textContent = "Obesidade 2"
+        msg.style.color = "orange"
+    }else if(rest <=34.9 && rest >= 30.0){
+        imc.textContent = rest
+        msg.textContent = "Obesidade 1"
+        msg.style.color = "orange"
+    }else if(rest <= 29.9 && rest >= 25.0){
+        imc.textContent = rest
+        msg.textContent = "Soprepeso"
+        msg.style.color = "yellow"
+    }else if(rest <= 24.9 && rest >= 18.6){
+    imc.textContent = rest
+    msg.textContent = "Normal"
+    msg.style.color = "blue"
+    }else{
+        msg.textContent = "INVALIDO"
+        msg.style.color = "red"
+    }
+
+
+}
+
+function verif(){
+    var idade = parseFloat(document.getElementById("n11").value)
+    var resid = document.getElementById("resid")
+    var msgid = document.getElementById("msgid")
+    var res = ano - 2025
+
+    if(res >= 18){
+        resid.textContent = res
+        msgid.textContent = "Entrada permitida"
+        msg.style.color = "green"
+    }
+    else{
+        resid.textContent = res
+        msgid.textContent = "Entrada negada"
+        msg.style.color = "red"
+    }
+}
